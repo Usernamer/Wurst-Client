@@ -1,5 +1,5 @@
 /*
- * Copyright © 2014 - 2015 Alexander01998 and contributors
+ * Copyright Â© 2014 - 2015 Alexander01998 and contributors
  * All rights reserved.
  * 
  * This Source Code Form is subject to the terms of the Mozilla Public
@@ -24,43 +24,43 @@ public class ChatMessenger
 	{
 		if(enabled)
 			Minecraft.getMinecraft().ingameGUI.getChatGUI().printChatMessage(
-				new ChatComponentText("§c[§6Wurst§c]§f " + message));
+				new ChatComponentText("Â§c[Â§6WurstÂ§c]Â§f " + message));
 	}
 	
 	public void info(String message)
 	{
-		message("§8[§7§lINFO§8]§f " + message);
+		message("Â§7[Â§6Â§lWurst XÂ§7] (info)Â§f " + message);
 	}
 	
 	public void debug(String message)
 	{
-		message("§8[§7§lDEBUG-INFO§8]§f " + message);
+		message("Â§7[Â§6Â§lWurst XÂ§7] (debug)Â§f " + message);
 	}
 	
 	public void warning(String message)
 	{
-		message("§c[§6§lWARNING§c]§f " + message);
+		message("Â§7[Â§6Â§lWurst XÂ§7] (warning)Â§f " + message);
 	}
 	
 	public void error(String message)
 	{
-		message("§c[§4§lERROR§c]§f " + message);
+		message("Â§7[Â§6Â§lWurst XÂ§7] (error)Â§f " + message);
 	}
 	
 	public void success(String message)
 	{
-		message("§a[§2§lSUCCESS§a]§f " + message);
+		message("Â§7[Â§6Â§lWurst XÂ§7] (success)Â§f " + message);
 	}
 	
 	public void failure(String message)
 	{
-		message("§c[§4§lFAILURE§c]§f " + message);
+		message("Â§7[Â§6Â§lWurst XÂ§c] (failure)Â§f " + message);
 	}
 	
 	public void cmd(String message)
 	{
 		Minecraft.getMinecraft().ingameGUI.getChatGUI().printChatMessage(
-			new ChatComponentText("§c[§6Wurst§c]§f §0§l<§aCMD§0§l>§f "
+			new ChatComponentText("Â§7[Â§6WurstÂ§7]Â§f Â§0Â§l<Â§aCMDÂ§0Â§l>Â§f "
 				+ message));
 	}
 }
