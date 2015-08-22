@@ -10,17 +10,17 @@
 [![analytics](https://img.shields.io/badge/analytics-GA-blue.svg)](https://github.com/igrigorik/ga-beacon)
 
 ## About :information_source:
-The Wurst Client is a Hack Client for Minecraft, packed full of the latest and most exciting mods, commands and other features. All of the mods and commands are instantly deployable at any moment, through buttons, keybinds and even automatic scripts. *You rule the game!*
+Wurst X is a version of Wurst which has a daily update, ranging from a new mod to a small interface tweak. *You rule Minecraft!*
 
-## :sparkles::sparkles::sparkles: Special Features :sparkles::sparkles::sparkles:
+## Special Features :sparkles:
 ### Secure AltManager :closed_lock_with_key:
 Wurst comes packed with a full featured Alt Manager that supports both premium and cracked accounts. It's the only Alt Manager out there that uses modern encryption algorithms to ensure your alts are stored securely.
 
 ### Custom AutoBuild :construction:
 Wurst is the only client containing an AutoBuild mod that is fully customizable. You can create your very own templates using the popular JSON language or download some samples from the Wurst Client website. It also comes with 7 templates pre-installed, so you can instantly start using it.
 
-### Wurst-Bot :floppy_disk:
-Wurst-Bot allows you to automate everything! It can grief for you, fight for you, or just spam stuff in the chat. You can either run it from the command-line or make yourself a custom Wurst-Bot launcher in nearly any language. Since DarkBot is discontinued, this is yet another Wurst feature that you won't find in any other client.
+### Automatizer :floppy_disk:
+Automatizer allows you to automate everything! It can grief for you, fight for you, or just spam stuff in the chat. You can either run it from the command-line or make yourself a custom Wurst-Bot launcher in nearly any language. Since DarkBot is discontinued, this is yet another Wurst feature that you won't find in any other client.
 
 ### Made with Love! :heart:
 Wurst is one of the few clients out there that is **not** made for the money - I actually care about this client. It is my goal to create a client that is absolutely perfect - and I work day & night to achieve this goal.
