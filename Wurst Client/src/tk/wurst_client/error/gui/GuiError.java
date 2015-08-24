@@ -1,5 +1,5 @@
 /*
- * Copyright © 2014 - 2015 Alexander01998 and contributors
+ * Copyright Â© 2014 - 2015 Alexander01998 and contributors
  * All rights reserved.
  * 
  * This Source Code Form is subject to the terms of the Mozilla Public
@@ -64,7 +64,7 @@ public class GuiError extends GuiScreen
 	public void initGui()
 	{
 		buttonList.add(new GuiButton(0, width / 2 - 100, height / 3 * 2, 200,
-			20, "§a§l§nReport Bug"));
+			20, "Â§aÂ§lÂ§nReport Bug"));
 		buttonList.add(new GuiButton(1, width / 2 - 100, height / 3 * 2 + 24,
 			98, 20, "View Bug"));
 		buttonList.add(new GuiButton(2, width / 2 + 2, height / 3 * 2 + 24, 98,
@@ -90,7 +90,7 @@ public class GuiError extends GuiScreen
 				{
 					backToGame();
 					WurstClient.INSTANCE.chat
-						.error("Error reports can only be sent from the latest version.");
+						.error("Error reports can only be sent from the latest version. (v2.4)");
 					return;
 				}
 				try
@@ -213,7 +213,7 @@ public class GuiError extends GuiScreen
 				mc.displayGuiScreen(new GuiYesNo(
 					this,
 					"Are you absolutely sure you don't want to report this error?",
-					"We can't fix it that way!", "§4Yes", "§2No", 0));
+					"We can't fix it that way!", "Â§4Yes", "Â§2No", 0));
 				break;
 			default:
 				break;
@@ -269,25 +269,25 @@ public class GuiError extends GuiScreen
 				output.println(line);
 			String content = writer.toString();
 			content =
-				content.replace("§time", new SimpleDateFormat(
+				content.replace("Â§time", new SimpleDateFormat(
 					"yyyy.MM.dd-hh:mm:ss").format(new Date()));
-			content = content.replace("§trace", trace);
+			content = content.replace("Â§trace", trace);
 			content =
-				content.replace("§os", System.getProperty("os.name") + " ("
+				content.replace("Â§os", System.getProperty("os.name") + " ("
 					+ System.getProperty("os.arch") + ")");
 			content =
-				content.replace("§java", System.getProperty("java.version")
+				content.replace("Â§java", System.getProperty("java.version")
 					+ " (" + System.getProperty("java.vendor") + ")");
 			content =
 				content
 					.replace(
-						"§wurst",
+						"Â§wurst",
 						WurstClient.INSTANCE.updater.getCurrentVersion()
 							+ " (latest: "
 							+ WurstClient.INSTANCE.updater.getLatestVersion()
 							+ ")");
 			content =
-				content.replace("§desc",
+				content.replace("Â§desc",
 					getReportDescription()
 						+ (comment.isEmpty() ? "" : "\n" + comment));
 			return content;
@@ -309,7 +309,7 @@ public class GuiError extends GuiScreen
 		mc.getTextureManager().bindTexture(bugTexture);
 		drawScaledCustomSizeModalRect(width / 2 - 48, height / 3, 0, 0, 256,
 			256, 96, 96, 256, 256);
-		drawCenteredString(fontRendererObj, "§nError!§r", width / 2,
+		drawCenteredString(fontRendererObj, "Â§nError!Â§r", width / 2,
 			height / 4, 0xffffffff);
 		drawCenteredString(fontRendererObj, getReportDescription(), width / 2,
 			height / 4 + 16, 0xffffffff);
