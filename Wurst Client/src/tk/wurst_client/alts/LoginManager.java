@@ -1,5 +1,5 @@
 /*
- * Copyright © 2014 - 2015 Alexander01998 and contributors
+ * Copyright Â© 2014 - 2015 Alexander01998 and contributors
  * All rights reserved.
  * 
  * This Source Code Form is subject to the terms of the Mozilla Public
@@ -46,18 +46,18 @@ public class LoginManager
 			displayText = "";
 		}catch(AuthenticationUnavailableException e)
 		{
-			displayText = "§4§lCannot contact authentication server!";
+			displayText = "Â§4Â§lCannot contact authentication server! (restart if used SessionStealer!)";
 		}catch(AuthenticationException e)
 		{// wrong password account migrated
 			if(e.getMessage().contains("Invalid username or password.")
 				|| e.getMessage().toLowerCase().contains("account migrated"))
-				displayText = "§4§lWrong password!";
+				displayText = "Â§4Â§lWrong password!";
 			else
-				displayText = "§4§lCannot contact authentication server!";
+				displayText = "Â§4Â§lCannot contact authentication server! (restart if used SessionStealer!)";
 			logger.error(e.getMessage());
 		}catch(NullPointerException e)
 		{
-			displayText = "§4§lWrong password!";
+			displayText = "Â§4Â§lWrong password!";
 		}
 		return displayText;
 	}
@@ -78,18 +78,18 @@ public class LoginManager
 			displayText = "";
 		}catch(AuthenticationUnavailableException e)
 		{
-			displayText = "§4§lCannot contact authentication server!";
+			displayText = "Â§4Â§lCannot contact authentication server! (restart if used SessionStealer!)";
 		}catch(AuthenticationException e)
 		{// wrong password account migrated
 			if(e.getMessage().contains("Invalid username or password.")
 				|| e.getMessage().toLowerCase().contains("account migrated"))
-				displayText = "§4§lWrong password!";
+				displayText = "Â§4Â§lWrong password!";
 			else
-				displayText = "§4§lCannot contact authentication server!";
+				displayText = "Â§4Â§lCannot contact authentication server! (restart if used SessionStealer!)";
 			logger.error(e.getMessage());
 		}catch(NullPointerException e)
 		{
-			displayText = "§4§lWrong password!";
+			displayText = "Â§4Â§lWrong password!";
 		}
 		return displayText;
 	}
