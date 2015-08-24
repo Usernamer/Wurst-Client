@@ -1,5 +1,5 @@
 /*
- * Copyright © 2014 - 2015 Alexander01998 and contributors
+ * Copyright Â© 2014 - 2015 Alexander01998 and contributors
  * All rights reserved.
  * 
  * This Source Code Form is subject to the terms of the Mozilla Public
@@ -44,7 +44,7 @@ public class TacoCmd extends Cmd implements GUIRenderListener, UpdateListener
 	public void execute(String[] args) throws Error
 	{
 		if(args.length != 0)
-			syntaxError("Tacos don't need arguments!");
+			syntaxError("Only if you are vegetarian.");
 		toggled = !toggled;
 		if(toggled)
 		{
